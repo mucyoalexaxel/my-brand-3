@@ -7,10 +7,12 @@ import swaggerJsDoc from "swagger-jsdoc";
 import messageRoutes from "./routes/message.js";
 import articleRoutes from "./routes/article.js"
 import auth from './routes/auth.js';
+import cors from 'cors'
 
 
 
 const app = express()
+app.use(cors())
 app.use(express.json());
 
 // API Swager Documentation
